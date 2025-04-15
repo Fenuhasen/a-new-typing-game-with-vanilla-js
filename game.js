@@ -245,7 +245,7 @@ const accuracyInHTML = document.getElementById("accuracy")
     timer--
     time.textContent = timer
     }, 1000);
-    */
+*/
    
    function compteARebour(){
        timer--
@@ -273,30 +273,30 @@ const accuracyInHTML = document.getElementById("accuracy")
            bar6Score = scoreList[5]*(60/5) - scoreList[4]*(60/5)
            bar7Score = scoreList[6]*(60/5) - scoreList[5]*(60/5)
            bar8Score = scoreList[7]*(60/5) - scoreList[6]*(60/5)
-       bar9Score = scoreList[8]*(60/5) - scoreList[7]*(60/5)
-       bar10Score = scoreList[9]*(60/5) - scoreList[8]*(60/5)
-       bar11Score = scoreList[10]*(60/5) - scoreList[9]*(60/5)
-       bar12Score = scoreList[11]*(60/5) - scoreList[10]*(60/5)
-       bar1.style.height = `${bar1Score}px`
-       bar2.style.height = `${bar2Score}px`
-       bar3.style.height = `${bar3Score}px`
-       bar4.style.height = `${bar4Score}px`
-       bar5.style.height = `${bar5Score}px`
-       bar6.style.height = `${bar6Score}px`
-       bar7.style.height = `${bar7Score}px`
-       bar8.style.height = `${bar8Score}px`
-       bar9.style.height = `${bar9Score}px`
-       bar10.style.height = `${bar10Score}px`
-       bar11.style.height = `${bar11Score}px`
-       bar12.style.height = `${bar12Score}px`
-       if(choice!="one"){
-           bar7.style.visibility="hidden"
-           bar8.style.visibility="hidden"
-           bar9.style.visibility="hidden"
-           bar10.style.visibility="hidden"
-           bar11.style.visibility="hidden"
-           bar12.style.visibility="hidden"
-        }
+           bar9Score = scoreList[8]*(60/5) - scoreList[7]*(60/5)
+           bar10Score = scoreList[9]*(60/5) - scoreList[8]*(60/5)
+           bar11Score = scoreList[10]*(60/5) - scoreList[9]*(60/5)
+           bar12Score = scoreList[11]*(60/5) - scoreList[10]*(60/5)
+           bar1.style.height = `${bar1Score}px`
+           bar2.style.height = `${bar2Score}px`
+           bar3.style.height = `${bar3Score}px`
+           bar4.style.height = `${bar4Score}px`
+           bar5.style.height = `${bar5Score}px`
+           bar6.style.height = `${bar6Score}px`
+           bar7.style.height = `${bar7Score}px`
+           bar8.style.height = `${bar8Score}px`
+           bar9.style.height = `${bar9Score}px`
+           bar10.style.height = `${bar10Score}px`
+           bar11.style.height = `${bar11Score}px`
+           bar12.style.height = `${bar12Score}px`
+           if(choice!="one"){
+               bar7.style.visibility="hidden"
+               bar8.style.visibility="hidden"
+               bar9.style.visibility="hidden"
+               bar10.style.visibility="hidden"
+               bar11.style.visibility="hidden"
+               bar12.style.visibility="hidden"
+            }
     }
 }
 
