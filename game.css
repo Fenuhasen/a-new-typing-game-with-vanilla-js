@@ -1,0 +1,18 @@
+/* Ca mon pote c'est pour la difficulte */
+.right-option{
+ display: flex;
+ position: fixed;
+ right: 10px;
+ top: 30px;
+ font-size: larger;
+ color: chocolate;
+}
+#mode{
+    color: chocolate;
+    background: #323437;
+    border: none solid 5px;
+    font-size: large;
+    border-radius: 5px;
+    border-color: chocolate;
+    margin: 0px 5px;
+}
