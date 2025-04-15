@@ -1,3 +1,17 @@
+*{
+    margin: auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --primary-color : #252525;
+    --secondary-color : #e2b714;
+    --tertiary-color : #d3d3d3;
+    --quatre-color : #8cf1a3;
+    --background : #2e2e2e;
+    --white : #fff;
+}
+
 /* Ca mon pote c'est pour la difficulte */
 .right-option{
  display: flex;
@@ -15,4 +29,222 @@
     border-radius: 5px;
     border-color: chocolate;
     margin: 0px 5px;
+}
+
+
+body{
+    background-color: var(--background);
+    transition: 400ms;
+}
+h1{
+    margin-inline: auto;
+    color: var(--secondary-color);
+    font-size: 50px;
+}
+p{
+    color: var(--tertiary-color);
+    font-size: 30px;
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75vw;
+    padding: 25px;
+    gap: 25px;
+}
+label{
+    color: var(--tertiary-color);
+    font-size: 30px;
+}
+.option{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+    height: 50px;
+}
+.option div{
+    margin-top: 20px;
+}
+input{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    color: var(--secondary-color);
+    background-color: transparent;
+    border-color: var(--background);
+    padding-inline: 15px;
+    border: solid gold 1px;
+}
+
+input:focus{
+    border: solid transparent;
+}
+button{
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.light{
+    color: #252525 !important;
+    background-color: white !important;
+    transition: 400ms;
+}
+.remarque{
+    position: fixed;
+    bottom: 0;
+    left: 200px;
+    width: 15vw;
+    height: 15vw;
+}
+.paragraph{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+#previous{
+    margin: 0;
+    font-size: 40px;
+}
+#now{
+    margin: 0;
+    gap: 10ch;
+    font-size: 40px;
+}
+#next{
+    margin: 0;
+    font-size: 40px;
+}
+.result{
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 5vh;
+    left: 5vw;
+    width: 90vw;
+    height: 90vh;
+    background-color: #252525;
+}
+
+#para{
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    font-size: 30px;
+    color: white;
+}
+
+.stat{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-inline: 50px;
+    width: 40vw;
+    gap: 5px;
+}
+
+.stat div{
+    width: 25px;
+    height: 1px;
+    min-height: 1px;
+    background-color: chocolate;
+    border-radius: 15px;
+    transition: 2s;
+}
+
+.circle{
+    text-align: center;
+    padding: 30px;
+    height: 70px;
+    width: 70px;
+    border: solid 15px chocolate;
+    border-radius: 50%;
+    color: chocolate;
+    font-size: 30px;
+}
+.circle p{
+    color: chocolate;
+}
+#wpm{
+    margin: auto;
+}
+.score{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 25px;
+}
+#time{
+    margin-block:  20px;
+    font-size: 30px;
+    font-family: Edu;
+}
+.exit{
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    color: chocolate;
+    background-color: transparent;
+    border: 5px solid transparent;
+    font-weight: bolder;
+    font-size: 50px;
+}
+.exit:hover{
+    transform: scale(1.2);
+}
+header{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 20vw;
+    height: 30px;
+    margin-top: 45px;
+    border-radius: 25px;
+    background-color: #4d4c4c;
+}
+header button{
+    color: gray;
+    font-size: 12px;
+    width: 50px;
+    height: 12px;
+    background-color: transparent;
+    border-top: transparent solid 2px;
+    border-bottom: transparent solid 2px;
+    border-right: solid 2px gray;
+    border-left: solid 2px grey
+}
+header button:hover{
+    color: chocolate;
+}
+#timebar{
+    position: fixed;
+    bottom: 0px;
+    margin-top: 0;
+    height: 20px;
+    width: 100vw;
+    background-color: chocolate;
+    transition: 1s;
+}
+.colorButton{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.chocolate{
+    background-color: chocolate;
+}
+.violet{
+    background-color: violet;
+}
+.green{
+    background-color: green;
+}
+header div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
