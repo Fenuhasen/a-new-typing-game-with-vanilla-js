@@ -21,6 +21,9 @@
  font-size: larger;
  color: chocolate;
 }
+.right-option label{
+    color: #252525;
+}
 #mode{
     color: chocolate;
     background: #323437;
@@ -33,7 +36,8 @@
 
 
 body{
-    background-color: var(--background);
+    background: linear-gradient( #ffffb1,#bc5066,#3f4259);
+    height: 95vh;
     transition: 400ms;
 }
 h1{
@@ -104,6 +108,11 @@ button{
     display: flex;
     flex-direction: row;
     padding: 0;
+    height: 180px;
+    overflow: hidden;
+}
+#textTest{
+    transition: 2s;
 }
 #previous{
     margin: 0;
