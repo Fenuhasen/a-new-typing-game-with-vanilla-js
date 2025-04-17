@@ -59,7 +59,7 @@ main{
     gap: 25px;
 }
 label{
-    color: var(--tertiary-color);
+    color: white;
     font-size: 30px;
 }
 .option{
