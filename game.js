@@ -1,3 +1,6 @@
+const modeSelect = document.getElementById("mode");
+
+/*
 /**
  * Point culture (en Français car je suis un peu obligé): 
  * Dans ce genre de jeu, un mot equivaut a 5 caractères, y compris les espaces. 
@@ -9,7 +12,6 @@
 let currentWordIndex = 0;
 const wordsToType = [];
 
-const modeSelect = document.getElementById("mode");
 const wordDisplay = document.getElementById("word-display");
 const inputField = document.getElementById("input-field");
 const results = document.getElementById("results");
@@ -29,19 +31,19 @@ theme.addEventListener("click", function(){
         theme.textContent= "Dark Mode"
     }
 })
+*/
 
 const words = {
     easy: ["apple", "banana", "grape", "orange", "cherry"],
     medium: ["keyboard", "monitor", "printer", "charger", "battery"],
     hard: ["synchronize", "complicated", "development", "extravagant", "misconception"]
 };
-
 // Generate a random word from the selected mode
 const getRandomWord = (mode) => {
     const wordList = words[mode];
     return wordList[Math.floor(Math.random() * wordList.length)];
 };
-
+/*
 // Initialize the typing test
 const startTest = (wordCount = 50) => {
     wordsToType.length = 0; // Clear previous words
@@ -162,13 +164,20 @@ function getRandomNumber(){
     return randomNumber.toFixed(0)%wordList.length
 }
 
-function generateText(numberOfWord){
+/*function generateText(numberOfWord){
     for(let i = 0; i<numberOfWord;i++){
         newWord+= wordList[getRandomNumber()] + ` ` 
     }
     newWord+= wordList[getRandomNumber()]
-}
+}*/
 
+function generateText(numberOfWord){
+    newWord = ""
+    for(let i = 0; i<numberOfWord;i++){
+        newWord+=  getRandomWord(modeSelect.value) + ` ` 
+    }
+    newWord+= getRandomWord(modeSelect.value)
+}
 
 
 const timeOne = document.querySelector(".timeOne")
@@ -199,7 +208,7 @@ timeTwo.addEventListener("click", function(){
         time.textContent = "60"
     }
 })
-generateText(40)
+generateText(100)
 
 let timerInitial = 61
 let timer = 61
@@ -213,6 +222,11 @@ next.textContent = newWord.slice(index+1,newWord.length+1)
 function updateLetter(){
     index++
     score++
+    if(score%50==0){
+        let translatePosition = score/50 * 60
+        textTest.style.transform= `translateY(-${translatePosition}px)`
+    }
+    
     previous.textContent = newWord.slice(0,index)
     now.textContent = newWord.slice(index,index+1)
     next.textContent = newWord.slice(index+1,newWord.length+1)
@@ -353,3 +367,5 @@ function timebarDiminution(){
         }, 1000);
     }
 }
+
+const textTest = document.getElementById("textTest")
